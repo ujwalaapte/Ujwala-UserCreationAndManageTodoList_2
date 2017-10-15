@@ -1,0 +1,19 @@
+﻿<h2>Hi {{vm.user.firstName}}!</h2>
+<p>You're logged in!!</p>
+<p>To create tasks: <a href="#!/todo" class="btn btn-link">Todo</a></p>
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<td><a href="#!/login" class="btn btn-primary">Logout</a>
+</p>
+
+
+
+
+    
+    
